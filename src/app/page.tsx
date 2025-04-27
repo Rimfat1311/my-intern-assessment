@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import Image from "next/image";
+import ProductCategories from "@/components/ProductCartegories";
 
 
 export default function Home() {
@@ -8,7 +8,8 @@ export default function Home() {
     <div>
       
 <Nav />
-<Hero />
+<Hero /> 
+<ProductCategories />
 
     </div>
   );
