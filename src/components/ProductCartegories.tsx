@@ -30,7 +30,7 @@ const ProductCategories = () => {
   ];
 
   return (
-    <div className=" text-white p-8">
+    <div className=" text-black p-8">
       <div className="mb-8">
         <h2 className="text-xl font-bold mb-4">Section 1</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
