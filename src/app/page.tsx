@@ -1,4 +1,5 @@
-import Hero from "@/components/Hero";
+"use client";
+ import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import ProductCategories from "@/components/ProductCartegories";
 
