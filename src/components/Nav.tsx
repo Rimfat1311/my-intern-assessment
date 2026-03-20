@@ -2,6 +2,16 @@
 import React from 'react'
 
 export default function Nav() {
+const items = [
+        'Shop Now',
+        'Deals',
+        'Categories',
+        'About Us',
+        'Contact',
+]
+
+items.map((item) => item)
+  
   return (
     <nav className=' fixed px-10 py-5  flex gap-x-20 justify-between items-center text-center text-[#D0D0D0D0] bg-transparent gap-2'>
       <div>
