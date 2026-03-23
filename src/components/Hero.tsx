@@ -1,22 +1,61 @@
 
+// import React from 'react'
+// import Image from "next/image";
+// import background from "@/public/images/background.png"
+
+
+// const Hero = () => {
+//   return (
+//     <div className=" h-100  bg-no-repeat bg-right bg-black object-cover"  >
+//         <Image className='relative object-cover w-full h-screen opacity-50' src={background} alt="" priority />
+//     {/* <div className="absolute object-cover inset-0 bg-black bg-opacity-60"></div> */}
+//     <div className="absolute  top-72 ml-36 space-y-10 flex flex-col items-start justify-center text-left text-white">
+//       <h1 className="text-4xl md:text-6xl font-bold w-4/5">Discover Your Next Favorite Product!</h1>
+
+//       <a href="#" className="top-20 mt-6 px-4 py-2 bg-[#BBA27B] text-white rounded hover:bg-red-600">
+//       Sign Up for Free
+//       </a>
+//     </div>
+//   </div>
+//   )
+// }
+
+// export default Hero
+
+
+
 import React from 'react'
 import Image from "next/image";
 import background from "@/public/images/background.png"
 
-
 const Hero = () => {
   return (
-    <div className=" h-100  bg-no-repeat bg-right bg-black object-cover"  >
-        <Image className='relative object-cover h-screen opacity-50' src={background} alt="" />
-    {/* <div className="absolute object-cover inset-0 bg-black bg-opacity-60"></div> */}
-    <div className="absolute  top-72 ml-36 space-y-10 flex flex-col items-start justify-center text-left text-white">
-      <h1 className="text-4xl md:text-6xl font-bold w-4/5">Discover Your Next Favorite Product!</h1>
-     
-      <a href="#" className="top-20 mt-6 px-4 py-2 bg-[#BBA27B] text-white rounded hover:bg-red-600">
-      Sign Up for Free
-      </a>
+    <div className=" h-screen w-full bg-black">
+
+      {/* Background Image */}
+      <Image
+        src={background}
+        alt="background"
+        fill
+        className="object-cover opacity-50"
+        priority
+      />
+
+      {/* Overlay Content */}
+      <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-white">
+        <h1 className="text-4xl md:text-6xl font-bold max-w-2xl">
+          Discover Your Next Favorite Product!
+        </h1>
+
+        <a
+          href="#"
+          className="mt-6 w-fit px-6 py-3 bg-[#BBA27B] rounded hover:bg-red-600 transition"
+        >
+          Sign Up for Free
+        </a>
+      </div>
+
     </div>
-  </div>
   )
 }
 
